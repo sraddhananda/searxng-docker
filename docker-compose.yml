@@ -32,8 +32,8 @@ services:
       - searxng
     volumes:
       - valkey-data2:/data
-    # cap_drop:
-    #   - ALL
+    cap_drop:
+      - ALL
     cap_add:
       - SETGID
       - SETUID
